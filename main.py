@@ -1,4 +1,4 @@
-from crud import create_ticket, view_ticket, search_ticket
+from crud import create_ticket, view_ticket, search_ticket, manage_assets
 
 def show_menu():
     print("=================")
@@ -25,6 +25,7 @@ while True:
         search_ticket()
     elif choice==4    :
         print("Manage asset selected")
+        manage_assets()
     elif choice==5    :
         print("Reports selected")
     elif choice==6    :
