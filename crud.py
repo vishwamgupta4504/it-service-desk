@@ -18,9 +18,21 @@ def create_ticket():
     print(employee_details)
     tickets.append(employee_details)
 
-def view_ticket()    :
+def view_ticket():
     if not tickets:
         print("No ticket found. ")
     else:
         for ticket in tickets:
             print(ticket)    
+
+
+def search_ticket():
+    Enter_id=input("Enter ticket id: ")
+
+    for ticket in tickets:
+        if Enter_id == ticket["ticket_id"]:
+            print("Ticket found")
+            print(ticket)
+            break
+    else:
+        print("No ticket found.")    
